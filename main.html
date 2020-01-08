@@ -1,0 +1,145 @@
+<!doctype html>
+<!--
+
+F40009:메인컬러
+1E1E1E:서브컬러
+
+IA:
+메인페이지
+├서브페이지(정적): Coke Story
+│	├CocaCola Story - 슬라이드 방식
+│	└CocaCola Brands - 탭 방식
+└서브페이지(동적): Coke Freestyle
+
+header: 배경 투명, 스크롤시 메인 컬러 표시
+
+슬라이드1: 비디오(20sec)
+슬라이드2: 사진
+좌우 버튼 추가
+아래 화살표 애니메이션 효과 적용
+dimmer 49%
+
+Section 텍스트 마우스 오버시 특수효과 적용
+
+Footer Family Site클릭 시 Scroll효과 적용
+
+sub page
+슬라이드 방식: 
+- 클릭 유도 아이콘 배치
+- 클릭시 자바스크립트 사용, 해당 페이지로 넘어감
+- 자동 페이지 스크롤 or 페이드아웃, 페이지넘김효과
+탭 방식
+
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="vegas/vegas.min.css">
+<link rel="stylesheet" href="css/index-xd.css" media="screen and (min-width: 1400px)">
+<link rel="stylesheet" href="css/index-hd.css" media="screen and (min-width: 1050px) and (max-width: 1399px)">
+<link rel="stylesheet" href="css/index-tab.css" media="screen and (min-width: 750px) and (max-width: 1049px)">
+<link rel="stylesheet" href="css/index-sm.css" media="screen and (max-width: 749px)">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="vegas/vegas.min.js"></script>
+<script src="fontawesome/js/all.min.js"></script>
+<script src="js/main.js"></script>
+
+<title>CocaCola About</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 class="logo cola">1ocaCola About</h1>   
+            <ul>
+                <li id="m-story">
+                    <a>Coke Story</a>
+                    <ul class="sub-story">
+                        <li><a href="#">Coke History</a></li>
+                        <li><a href="#">Coke Brands</a></li>
+                    </ul>
+                </li>
+                <li id="m-freestyle"><a href="#">Coke Freestyle</a></li>
+            </ul>
+         
+        </nav>
+    </header>
+    <section>
+        <!-- 슬라이드 이미지 -->
+        <div class="slider">
+            <div class="container">
+                <!-- Video Slide(20sec):Vegas Plugin -->
+                <div class="item">
+                    <div class="vegas">
+                        <div class="container">
+                            <div class="dimmer"></div>
+                        </div>
+                    </div>
+                </div> <!-- end:slide1 -->
+                <!-- Picture Slide -->
+                <div class="item">
+                    <div class="slogan">               
+                        <p>Taste the feeling</p>
+                        <p class="cola">1ocaCola</p>
+                    </div>
+                </div><!-- end:slide2 -->                
+            </div><!-- end:container -->
+            <div class="buttons">
+                <button id="btn-left"> 《 </button>
+                <button id="btn-right"> 》 </button>
+            </div>
+    		<div class="pagination">
+            	<div class="pag1"></div>
+                <div class="pag2"></div>
+            </div>
+        </div>
+        
+        <article>
+            <div class="brand">
+                 <h2>CokeStory</h2>
+                <p>코카-콜라로 떠나는 여행</p>   
+                <div class="pic">
+                    <img src="img/journey_brand.jpg" alt="CocaCola 브랜드">
+                </div>
+                <div class="detail">
+                    <h3>CokeBrands</h3>
+                    <p>글로벌 종합 음료회사, 코카-콜라는 전 세계 200여 개국 이상에 진출해 있으며, 탄산, 스포츠음료, 먹는 샘물, 주스, 차, 커피 등 총 500여개 이상의 브랜드, 4,100여 가지 종류의 제품을 보유하고 있습니다.</p>
+                    <a href="#">>>더 알아보기</a>
+                </div>
+               	<div class="round">
+                </div>                         
+				<div class="clear"></div>     
+            </div>
+            <div class="freestyle">
+                <h2>CokeFreestyle</h2>
+                <p>A WORLD OF CHOICE</p>
+                <div class="detail">
+                    <h3>Cokefreestyle</h3>
+                    <p>자신의 취향대로 마시는 재미<br>색다른 취향을 맛보는 재미<br>매일 매일 다르게 마시는 재미<br>메뉴마다 어울리는 음료를 페어링 해서 마시는 재미<br>때로는 괴상해 보이는 조합을 시도해보는 도전의 재미까지<br>Cokefreestyle은 사람들에게 전에 없던 음료 선택권을 제공함으로써<br> 진짜 ‘먹고 마시는 즐거움’이 무엇인지 느끼게 합니다.</p>
+                    <a href="#">>>체험하기</a>
+                </div>
+                <div class="pic">
+                    <img src="img/journey_fs.jpg" alt="CocaCola 프리스타일">
+                </div>          
+            </div>
+        </article>
+    </section>
+    <div class="clear"></div>
+    
+    <footer>
+        <div class="ft-wrap">
+            <p>Designed by 김정현.2019</p>
+            <div class="family">
+                <h3>▲패밀리 사이트</h3>
+                <ul class="family-pop">
+                    <li><a href="#"><span class="cola">1ocaCola</span>Journey™</a></li>
+                    <li><a href="#"><span class="fab fa-youtube-square"></span><span class="cola">1ocaCola</span>Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+	</footer>
+
+</body>
+</html>

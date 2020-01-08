@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document - reset.css : 공통스타일시트 */
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+@font-face {
+	font-family:'SCDR';
+	src:url(../fonts/SCDream.eot);
+	src:local(' '), url(../fonts/SCDream.woff);
+}
+@font-face {
+	font-family:'NGR';
+	src:url(../fonts/NanumGothic.eot);
+	src:local(' '), url(../fonts/NanumGothic.eot);
+}
+@font-face{
+	font-family:'COLA';
+	src:url(../fonts/LOKICOLA.eot);
+	src:local(' '), url(../fonts/LOKICOLA.woff);
+}
+ul { list-style:none; }
+a, a:hover { text-decoration:none; outline:none; }
+.clear { clear:both; }
+
+body { 
+	font-family:'SCDR', sans-serif; font-size:16px; color:#333;
+	background:#FFF;
+}
+section { transition:all 0.4s ease-in; }
+h1, h2, h3, h4, h5, h6 { font-family:'SCDR', sans-serif;}
+.cola{font-family:'COLA', sans-serif; color:#F40009;}
